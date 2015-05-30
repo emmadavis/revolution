@@ -10,7 +10,6 @@
      <ul class="secondary-links-menu header--pre_links-list nav__menu">
           <li><a href="/news">News</a></li>
           <li><a href="mailto:revolution@shropgeek.co.uk">Contact</a></li>
-          <li><a href="/tickets" class="tickets-button">Tickets</a></li>
       </ul>
     </div>
 
@@ -52,6 +51,12 @@
                     class="current"
                 {% endif %}>
                 <a href="/fringe">Fringe</a>
+              </li>
+              <li
+                {% if mixture.url == "tickets" %}
+                    class="current"
+                {% endif %}>
+                <a href="/tickets" class="tickets-button">Tickets</a>
               </li>
               <!--<li class="secondary-link"><a href="/news">News</a></li>-->
               <li class="secondary-link"><a href="mailto:revolution@shropgeek.co.uk">Contact</a></li>

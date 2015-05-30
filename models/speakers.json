@@ -2,7 +2,7 @@
   "title": "Speakers",
   "speaker": [
     {
-      "name": "Andy Clarke",
+      "name": "Andrew Clarke",
       "organisations": [
         [
           {
@@ -13,7 +13,7 @@
       ],
       "photo": "andy-clarke.jpg",
       "twitter": "malarkey",
-      "description": "<p>Andy is...</p>",
+      "description": "<p>Andrew Clarke is an art director and web designer at the UK website design studio <a href=\"http://stuffandnonsense.co.uk\" target=\"_blank\">Stuff and Nonsense</a> where he designs websites and applications for clients from around the world. Based in North Wales, he's also the author of two web design books, Transcending CSS and Hardboiled Web Design, his many conference presentations and ten years of contributing to the web design community. Jeffrey Zeldman once called him a \"triple talented bastard.\" If you know of Jeffrey, you'll know how happy that made him.</p>",
       "bookmark_link": "andy-clarke",
       "talk_title": "Talk Title...",
       "talk_description": "<p>Talk Description...",
@@ -25,13 +25,13 @@
         [
           {
             "name": "Records Sound the Same",
-            "url": "http://www.sallyjenkinson.co.uk/"
+            "url": "http://recordssoundthesame.com"
           }
         ]
       ],
       "photo": "sally-jenkinson.jpg",
       "twitter": "sjenkinson",
-      "description": "<p>Sally is...</p>",
+      "description": "<p>Sally is a technical consultant and solutions architect who, through her company <a href=\"http://recordssoundthesame.com\" target=\"_blank\">Records Sound the Same</a>, helps both big and small businesses with their discovery, planning, and strategic digital decisions. She focuses on using technology to enhance experiences, and is a speaker, coder, author, and gamer.</p>",
       "bookmark_link": "sally-jenkinson",
       "talk_title":"Talk Title...",
       "talk_description":"Talk Description...",
@@ -85,15 +85,49 @@
       "organisations": [
         [
           {
-            "name": "Joe Leech (Mr Joe)",
-            "url": "hhttp://mrjoe.uk/"
+            "name": "mrjoe",
+            "url": "http://mrjoe.uk/"
           }
         ]
       ],
       "photo": "joe-leech.jpg",
       "twitter": "mrjoe",
-      "description": "<p>Joe is...</p>",
+      "description": "<p>A UX Consultant, Joe, to his friends, is the author of the book <a href=\"http://fivesimplesteps.com/products/psychology­for­designers\" target=\"_blank\">Psychology of Designers</a>. He sometimes writes for Smashing Magazine, Net Magazine and others about how to use psychology to improve the user.</p><p>A recovering neuroscientist, then a spell as a elementary school teacher, Joe started his UX career 12 years ago. He has worked with organisations like Disney, eBay, Glenfiddich and Marriott.</p>",
       "bookmark_link": "jo-leech",
+      "talk_title": "Talk Title...",
+      "talk_description": "<p>Talk Description...</p>"
+      },
+      {
+      "name": "Emma Mulqueeny",
+      "organisations": [
+        [
+          {
+            "name": "Emma Mulqueeny",
+            "url": "http://emmamulqueeny.co.uk"
+          }
+        ]
+      ],
+      "photo": "emma-mulqueeny.jpg",
+      "twitter": "hubmum",
+      "description": "<p>Emma is the founder of <a href=\"rewiredstate.org\" target=\"_blank\">Rewired State</a> and <a href=\"http://yrs.io\" target=\"_blank\">Young Rewired State</a>, is a Commissioner for the Speaker's Commission on Digital Democracy and a Google Fellow.</p><p>She has recently been included in the 166th annual edition of Who’s Who, voted onto the Wired 100 list, Tech City 100, BIMA Hot 100, has been voted one of the top ten women in technology by The Guardian, into the top ten Tech Heroes for Good by NESTA, named as one of the 25 most influential women in IT by Computer Weekly and one of 2014’s 50 most incredible women in STEM.</p><p>Emma writes regularly for the British Press and on her own blog, speaks on radio and on television, is best known for her campaign: 'Year 8 is too Late' (encouraging girls into technology subjects) and insights into the social digital generation: the 97ers.</p>",
+      "bookmark_link": "emma-mulquenny",
+      "talk_title": "Talk Title...",
+      "talk_description": "<p>Talk Description...</p>"
+      },
+      {
+      "name": "Seb Lee-Delisle",
+      "organisations": [
+        [
+          {
+            "name": "Seb.ly",
+            "url": "hhttp://seb.ly"
+          }
+        ]
+      ],
+      "photo": "seb-lee-delisle.jpg",
+      "twitter": "seb_ly",
+      "description": "<p><a href=\"http://seb.ly\" target=\"_blank\">Seb Lee­-Delisle</a> is a digital artist and speaker who uses computers to engage with people and inspire them.</p><p>As an artist, he likes to make interesting things from code that encourage interaction and playfulness from the public. Notable projects include <a href=\"http://seb.ly/work/lunar-trails/\" target=\"_blank\">Lunar Trails</a>, featuring a 3m wide drawing machine, and <a href=\"http://pixelpyros.org/\" target=\"_blank\">PixelPyros</a>, nationwide in 2013.</p><p>As a speaker he demystifies programming and explores its artistic possibilities. His presentations and workshops enable artists to overcome their fear of code and encourage programmers of all backgrounds to be more creative and imaginative.</p><p>He won 3 Microsoft Critter awards in 2013, including Web Personality of the Year and Voice of the Year (best presenter) and he was Technical Director on Big and Small, the BBC project that won a BAFTA in 2009. Notable clients include BBC, Lego, Sony, Microsoft, Google, MLB, Nickelodeon, Philips, and Unilever.</p>",
+      "bookmark_link": "seb-lee-delisle",
       "talk_title": "Talk Title...",
       "talk_description": "<p>Talk Description...</p>"
       }
