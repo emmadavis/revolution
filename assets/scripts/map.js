@@ -32,7 +32,7 @@ function initMap(){
 
     var mapOptions = {
         zoom: 14,
-        center: new google.maps.LatLng(52.71706,-2.79396),
+        center: new google.maps.LatLng(52.714262, -2.757762), // 712457
         panControl: false,
         zoomControl: false,
         scaleControl: false,
@@ -54,7 +54,7 @@ function initMap(){
 
     var myIcon = new google.maps.MarkerImage('/assets/img/marker.png', null, null, null, new google.maps.Size(29,29));
 
-    var myLatLng = new google.maps.LatLng(52.709357,-2.793752);
+    var myLatLng = new google.maps.LatLng(52.710636,-2.757613);
     var marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
@@ -64,7 +64,7 @@ function initMap(){
     map.mapTypes.set('map_style', styledMap);
     map.setMapTypeId('map_style');
 
-    var myLatLngCntr = new google.maps.LatLng(52.71706,-2.79396);
+    var myLatLngCntr = new google.maps.LatLng(52.714262, -2.757762);
     google.maps.event.addDomListener(window, 'resize', function() {
         map.setCenter(myLatLngCntr);
     });

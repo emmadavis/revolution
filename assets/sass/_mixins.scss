@@ -1,13 +1,13 @@
-    .image-replacement {
+.image-replacement {
     text-indent: -1000%;
     white-space: nowrap;
     overflow: hidden;
 }
 
 .container {
-    max-width: 63.333333333em;
-    padding: 0 1em;
-    margin: 0 auto;
+    background: white;
+    max-width: 1200px;
+    margin: 0 auto 1.125em auto;
     position: relative;
 }
 
@@ -91,7 +91,7 @@
  * margin-top: 1.125rem;
  */
 @mixin remSize($size, $property:font-size, $base:$size-font-base) {
-  #{$property}: $size; //Fallback in px
+  #{$property}: #{$size}px; //Fallback in px
   #{$property}: calculateRem($size, $base);
 }
 
@@ -144,6 +144,14 @@ $prefixes: ("-webkit-","-moz-", "-o-", "-ms-", "");
     width: 75%;
 }
 
+@mixin grid-column--two-fifths {
+    width: 40%;
+}
+
+@mixin grid-column--three-fifths {
+    width: 60%;
+}
+
 @mixin grid-column--sixth {
     width: 16.666666667%;
 }
@@ -173,7 +181,7 @@ $prefixes: ("-webkit-","-moz-", "-o-", "-ms-", "");
 }
 
 @mixin block-grid-sixth {
-    width: 14.166666667%;
+    width: 13.6%;
     &:nth-child(6n+1) {
         margin-left: 0;
     }

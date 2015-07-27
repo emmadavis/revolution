@@ -8,20 +8,13 @@
         {% block styles %}{% endblock %}
     </head>
     <body>
-        {% include "header" %}
-        {% block open-wrapper %}
-          <div class="wrapper">
-        {% endblock %}
-
+        <div class="container">
+            {% include "header" %}
             <!-- Content block, child page inject content -->
             {% block content %}{% endblock %}
-
-
-        {% block close-wrapper %}
-          </div>
-        {% endblock %}
-        {% include "footer.sponsors" %}
-        {% include "footer" %}
+            {% include "footer.sponsors" %}
+            {% include "footer" %}
+        </div>
         {% include "html-footer" %}
         {% block scripts %}{% endblock %}
     </body>

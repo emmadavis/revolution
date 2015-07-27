@@ -1,16 +1,27 @@
-$tisa: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
+$size-font-base: 16;
+
+$lato: "Lato", Arial, Helvetica, sans-serif;
+$museo: "Museo", "Helvetica Neue", Helvetica, serif;
+$lucida: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 $futura-narrow: "futura-pt-condensed", "Arial Narrow", sans-serif;
 $futura: "futura-pt", "Helvetica Neue", Arial, Helvetica, serif;
 
-$colour_gold: #caa75b;
+$colour_black: #191919;
+$colour_grey: #2a2a2a;
+$colour_gold: #e7b42b;
+$colour_green: #98bb6d;
 $colour_red: #c1503e;
-$colour_black: #333333;
-$colour_grey: #777777;
+$colour_yellow: #f8E71c;
 
-$colour_text: $colour_black;
-$colour_background: #fff;
-$colour_links: $colour_red;
-$colour_borders: #e9e9e9;
+$colour_background: #dfdfdf;
+$colour_grey_background: #363131;
+$colour_pale_grey_background: #f6f6f6;
+
+$colour_hero_text: #333234;
+$colour_text: #4a4a4a;
+$colour_borders: #cdcdcd;
+$colour_links: #5F8C45;
+$colour_twitter: #55acee;
 
 $gutter-width: 2em;
 

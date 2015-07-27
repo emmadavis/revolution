@@ -5,8 +5,9 @@
 
         <link rel="shortcut icon" type="image/ico" href="{{ "favicon.ico" | asset_url }}" />
         <link rel="shortcut icon" type="image/ico" href="{{ "favicon.png" | asset_url }}" />
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        {% include "typekit" %}
+        
+        {% include "fonts" %}
+        {% comment %}{% include "typekit" %}{% endcomment %}
         <!-- Styles -->
-        {{ "global.css" | asset_url | stylesheet_tag }}
+        {{ "global.min.css" | asset_url | stylesheet_tag }}
 
