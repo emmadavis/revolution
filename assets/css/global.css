@@ -517,7 +517,8 @@ main h2 {
   @media (min-width: 64em) {
     .quick-event-details {
       margin-left: -0.5em;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      text-align: left; }
       .quick-event-details li {
         display: inline-block;
         margin-left: 0.5em; } }
@@ -561,7 +562,8 @@ main h2 {
           border-left: none; } }
 
 .header--site {
-  background: #2a2a2a; }
+  background: #2a2a2a;
+  padding-bottom: 0.5em; }
   .header--site .wrapper {
     position: relative; }
 
@@ -915,72 +917,101 @@ a.button--sponsorship {
   padding-bottom: 1em; }
 
 .hero {
-  margin-top: 176px;
+  margin-top: 10.25em;
   padding-top: 3em;
   padding-bottom: 3em; }
   @media (min-width: 41.875em) {
     .hero {
+      margin-top: 9em;
       padding-top: 5em;
       padding-bottom: 5em; } }
 
 .hero-homepage {
-  background: url("../img/hero.png") no-repeat center bottom;
-  background-size: 100%;
-  height: 280px;
-  padding-top: 2em; }
+  background: url("../img/hero-spiral.svg") no-repeat center top;
+  background-size: 300%;
+  height: 452px;
+  padding: 2em 0 0 0;
+  position: relative; }
   @media (min-width: 41.875em) {
     .hero-homepage {
-      height: 516px;
-      padding-top: 7.1em; } }
+      background-size: 150%;
+      height: 696px;
+      padding: 3.1em 0 0 0; } }
   @media (min-width: 64em) {
     .hero-homepage {
-      height: 696px; } }
+      height: 706px;
+      background-size: 100%; } }
   .hero-homepage .wrapper {
-    padding-left: 2%; }
+    padding-left: 2%;
+    height: 100%;
+    background: url("../img/home-hero.svg") no-repeat center bottom;
+    background-size: 100%; }
+    @media (min-width: 64em) {
+      .hero-homepage .wrapper {
+        padding-top: 10%; } }
+    @media (min-width: 77.77778em) {
+      .hero-homepage .wrapper {
+        background: url("../img/home-hero.svg") no-repeat center top;
+        background-size: 100%; } }
   .hero-homepage h1 {
-    font-size: 30px;
-    font-size: 1.875rem;
-    line-height: 1.1;
-    margin-bottom: 3.26em; }
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.1; }
+    @media (min-width: 64em) {
+      .hero-homepage h1 {
+        font-size: 30px;
+        font-size: 1.875rem;
+        margin-bottom: 3.26em; } }
     .hero-homepage h1 .bg {
       background: white;
       padding: 0 1%; }
   .hero-homepage h2 {
     color: #333234;
     font-weight: 500;
-    padding: 0 1%;
     text-transform: none; }
   .hero-homepage h2.top-subtitle {
     background: #e7b42b;
-    font-size: 30px;
-    font-size: 1.875rem;
+    font-size: 24px;
+    font-size: 1.5rem;
     display: inline-block;
-    height: 50px;
     line-height: 1.6em;
-    margin-bottom: 0.7em; }
+    margin-bottom: 0.7em;
+    padding: 0 1%; }
+    @media (min-width: 41.875em) {
+      .hero-homepage h2.top-subtitle {
+        font-size: 30px;
+        font-size: 1.875rem; } }
   .hero-homepage h2.bottom-subtitle {
-    font-size: 25px;
-    font-size: 1.5625rem; }
+    font-size: 21px;
+    font-size: 1.3125rem; }
     .hero-homepage h2.bottom-subtitle .bg {
       background: #e7b42b;
       line-height: 1.2em;
       padding: 0 1%; }
+    @media (min-width: 41.875em) {
+      .hero-homepage h2.bottom-subtitle {
+        font-size: 25px;
+        font-size: 1.5625rem; } }
   .hero-homepage figure {
-    background: #314b1f url(../img/pixelated-bg.jpg) no-repeat center;
-    border: 1px solid #274216;
-    border-radius: 4px;
-    height: 248px;
-    left: 422px;
-    position: relative;
-    overflow: hidden;
-    top: -245px;
-    width: 427px;
-    -ms-transform: rotate(4.25deg);
-    /* IE 9 */
-    -webkit-transform: rotate(4.25deg);
-    /* Chrome, Safari, Opera */
-    transform: rotate(4.25deg);
-    -webkit-backface-visibility: hidden; }
+    display: none; }
+    @media (min-width: 77.77778em) {
+      .hero-homepage figure {
+        display: block;
+        background: #314b1f url(../img/pixelated-bg.jpg) no-repeat center;
+        border: 1px solid #274216;
+        border-radius: 4px;
+        height: 245px;
+        width: 415px;
+        position: relative;
+        overflow: hidden;
+        left: 408px;
+        top: -293px;
+        -ms-transform: rotate(4.25deg);
+        /* IE 9 */
+        -webkit-transform: rotate(4.25deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(4.25deg);
+        -webkit-backface-visibility: hidden; } }
 
 .rotating-image-wrapper ul {
   margin-left: 0;

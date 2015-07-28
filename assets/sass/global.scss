@@ -167,6 +167,7 @@ main h2 {
     }
     @media (min-width: $large-screen) {
         @include inline-list;
+        text-align: left;
     }
     li {
         padding-right: 0.8em;
@@ -219,7 +220,7 @@ main h2 {
 
 .header--site {
     background: $colour_grey;
-    //padding-bottom: 2.5em;
+    padding-bottom: 0.5em;
     .wrapper {
         position: relative;
     }
@@ -559,76 +560,122 @@ a.button--sponsorship {
 }
 
 .hero {
-    margin-top: 176px;
+    margin-top: 10.25em;
     padding-top: $gutter-width*1.5;
     padding-bottom: $gutter-width*1.5;
+
     @media (min-width: $medium-screen) {
+        margin-top: 9em;
         padding-top: $gutter-width*2.5;
         padding-bottom: $gutter-width*2.5;
     }
 }
 
 .hero-homepage {
-    background: url('../img/hero.png') no-repeat center bottom;
-    background-size: 100%;
-    height: 280px;
-    padding-top: $gutter-width*1;
+    background: url('../img/hero-spiral.svg') no-repeat center top;
+    background-size: 300%;
+    height: 452px;
+    padding: $gutter-width*1 0 0 0;
+    position: relative;
 
     @media (min-width: $medium-screen) {
-        height: 516px;
-        padding-top: $gutter-width*3.55;
-    }
-    @media (min-width: $large-screen) {
+        background-size: 150%;
+        //height: 516px;
         height: 696px;
+        padding: $gutter-width*1.55 0 0 0;
     }
+
+    @media (min-width: $large-screen) {
+        height: 706px;
+        background-size: 100%;
+    }
+
+
+    
     .wrapper {
         padding-left: 2%;
+        height: 100%;
+        background: url('../img/home-hero.svg') no-repeat center bottom;
+        background-size: 100%;
+
+        @media (min-width: $large-screen) {
+            padding-top: 10%;
+        }
+
+        @media (min-width: $giant-screen) {
+            background: url('../img/home-hero.svg') no-repeat center top;
+            background-size: 100%;
+        }
     }
+
     h1 {
-        @include remSize(30);
+        @include remSize(24);
         line-height: 1.1;
-        margin-bottom: 3.26em;
+        
+        @media (min-width: $large-screen) {
+            @include remSize(30);
+            margin-bottom: 3.26em;
+        }
+
         .bg {
             background: white;
             padding: 0 1%;
         }
     }
+
     h2 {
         color: $colour_hero_text;
         font-weight: 500;
-        padding: 0 1%;
         text-transform: none;
     }
+
     h2.top-subtitle {
         background: $colour_gold;
-        @include remSize(30);
+        @include remSize(24);
         display: inline-block;
-        height: 50px;
+        //height: 50px;
         line-height: 1.6em;
         margin-bottom: 0.7em;
+        padding: 0 1%;
+
+        @media (min-width: $medium-screen) {
+            @include remSize(30);
+        }
     }
+
     h2.bottom-subtitle {
-        @include remSize(25);
+        @include remSize(21);
         .bg {
             background: $colour_gold;
             line-height: 1.2em;
             padding: 0 1%;
         }
+
+        @media (min-width: $medium-screen) {
+            @include remSize(25);
+        }
     }
+
     figure {
-        background: #314b1f url(../img/pixelated-bg.jpg) no-repeat center;
-        border: 1px solid #274216;
-        border-radius: 4px;
-        height: 248px;
-        left: 422px;
-        position: relative;
-        overflow: hidden;
-        top: -245px;
-        width: 427px;
-        -ms-transform: rotate(4.25deg); /* IE 9 */
-        -webkit-transform: rotate(4.25deg); /* Chrome, Safari, Opera */
-        transform: rotate(4.25deg);
-        -webkit-backface-visibility: hidden;
+        display: none;
+
+        @media (min-width: $giant-screen) {
+            display: block;
+            background: #314b1f url(../img/pixelated-bg.jpg) no-repeat center;
+            border: 1px solid #274216;
+            border-radius: 4px;
+            height: 245px;
+            width: 415px;
+            position: relative;
+            overflow: hidden;
+            left: 408px;
+            top: -293px;
+
+            -ms-transform: rotate(4.25deg); /* IE 9 */
+            -webkit-transform: rotate(4.25deg); /* Chrome, Safari, Opera */
+            transform: rotate(4.25deg);
+            -webkit-backface-visibility: hidden;
+        }
     }
 }
 
