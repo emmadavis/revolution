@@ -716,13 +716,18 @@ a.button--sponsorship {
         @include remSize(30);
         font-weight: 400;
         padding: 0.2em 0.8em;
+        z-index: 1001;
+        position:relative;
     }
     p.subtitle {    
         color: darken($colour_text, 9%);
         display: block;
         font-family: $futura-narrow;
         @include remSize(25);
+        line-height: 30px;
         margin-top: 1.1em;
+        z-index: 1001;
+        position:relative;
         span {
             background: white;
             padding: 0.1em 0.5em;
@@ -748,16 +753,36 @@ a.button--sponsorship {
         padding-top: 10.2em;
     }
     h1, p.subtitle {
+        @media (min-width: $medium-screen) {
         margin-left: 63.6%;
+        z-index: 200;
+        position: relative;
+    }
     }
 }
 
 .general__hero-monster-dude {
-    background: url(../img/hero-monster.png) no-repeat 6.8% bottom;
-    height: 34em;
+    background: url(../img/hero-monster.svg) no-repeat 6.8% bottom;
+    background-size: 450px;
+    height: 600px;
+    width: 150%;
     position: relative;
-    top: -25.9em;
+    top: -400px; //Ditched em as to unpredictable with scaling
+    left: -55px;
     z-index: 100;
+
+    @media (min-width: $medium-screen) {
+        background-size: 650px;
+        top: -500px;
+        z-index: 1000;
+    }
+
+    @media (min-width: $large-screen) {
+        top: -475px; //Ditched em as to unpredictable with scaling
+
+
+
+    }
 }
 
 .fullpage-section {
@@ -1428,7 +1453,7 @@ a.button--sponsorship {
         @include grid-column--block;
         @include block-grid-half;
     }
-     @media (min-width: $medium-screen) and (max-width: $large-screen) {
+     @media (min-width: $medium-screen) {
         @include grid-column--block;
         @include block-grid-third;
     }

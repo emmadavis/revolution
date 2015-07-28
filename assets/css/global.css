@@ -1040,14 +1040,19 @@ a.button--sponsorship {
     font-size: 30px;
     font-size: 1.875rem;
     font-weight: 400;
-    padding: 0.2em 0.8em; }
+    padding: 0.2em 0.8em;
+    z-index: 1001;
+    position: relative; }
   .hero--short p.subtitle {
     color: #333333;
     display: block;
     font-family: "futura-pt-condensed", "Arial Narrow", sans-serif;
     font-size: 25px;
     font-size: 1.5625rem;
-    margin-top: 1.1em; }
+    line-height: 30px;
+    margin-top: 1.1em;
+    z-index: 1001;
+    position: relative; }
     .hero--short p.subtitle span {
       background: white;
       padding: 0.1em 0.5em; }
@@ -1064,15 +1069,29 @@ a.button--sponsorship {
   @media (min-width: 41.875em) {
     .general__hero {
       padding-top: 10.2em; } }
-  .general__hero h1, .general__hero p.subtitle {
-    margin-left: 63.6%; }
+  @media (min-width: 41.875em) {
+    .general__hero h1, .general__hero p.subtitle {
+      margin-left: 63.6%;
+      z-index: 200;
+      position: relative; } }
 
 .general__hero-monster-dude {
-  background: url(../img/hero-monster.png) no-repeat 6.8% bottom;
-  height: 34em;
+  background: url(../img/hero-monster.svg) no-repeat 6.8% bottom;
+  background-size: 450px;
+  height: 600px;
+  width: 150%;
   position: relative;
-  top: -25.9em;
+  top: -400px;
+  left: -55px;
   z-index: 100; }
+  @media (min-width: 41.875em) {
+    .general__hero-monster-dude {
+      background-size: 650px;
+      top: -500px;
+      z-index: 1000; } }
+  @media (min-width: 64em) {
+    .general__hero-monster-dude {
+      top: -475px; } }
 
 .fullpage-section, .speakers, .home-location, .who-is-it-for, .location__shrewsbury, .footer--sponsors {
   /**
@@ -1813,7 +1832,7 @@ a.button--sponsorship {
       margin-left: 0; }
     .shrewsbury__accomodation--grid-unit:nth-child(odd) {
       margin-left: 0; } }
-@media (min-width: 41.875em) and (max-width: 64em) {
+@media (min-width: 41.875em) {
   .shrewsbury__accomodation--grid-unit {
     display: inline-block;
     margin-left: 3%;
