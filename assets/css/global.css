@@ -1121,7 +1121,7 @@ a.button--sponsorship {
     max-width: 262px;
     width: 22.696%; }
 
-@media (max-width: 64em) {
+@media (max-width: 41.875em) {
   .grid-unit--speaker--preview {
     display: inline-block;
     margin-left: 3%;
@@ -1131,7 +1131,7 @@ a.button--sponsorship {
       margin-left: 0; }
     .grid-unit--speaker--preview:nth-child(odd) {
       margin-left: 0; } }
-@media (min-width: 64em) {
+@media (min-width: 41.875em) {
   .grid-unit--speaker--preview {
     display: inline-block;
     margin-left: 3%;
@@ -1174,11 +1174,15 @@ a.button--sponsorship {
     background: #363131;
     color: white;
     display: inline-block;
-    font-size: 38px;
-    font-size: 2.375rem;
+    font-size: 26px;
+    font-size: 1.625rem;
     line-height: 1.5em;
     margin-bottom: 0.3em;
     padding: 0 3%; }
+    @media (min-width: 41.875em) {
+      .home-location h2 {
+        font-size: 38px;
+        font-size: 2.375rem; } }
   .home-location li {
     font-size: 20px;
     font-size: 1.25rem;
@@ -1190,9 +1194,13 @@ a.button--sponsorship {
     line-height: 1.6em;
     padding: 0.4em 10% 0.4em 6%; }
   .home-location p.subtitle {
-    font-size: 26px;
-    font-size: 1.625rem;
+    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.5em; }
+    @media (min-width: 41.875em) {
+      .home-location p.subtitle {
+        font-size: 26px;
+        font-size: 1.625rem; } }
     .home-location p.subtitle span {
       background: #e7b42b;
       padding: 0.1em 0.7em; }
@@ -1235,18 +1243,23 @@ a.button--sponsorship {
 
 .home-location__small-map {
   float: left;
-  width: 35%; }
-
-.home-location__map-links ul {
-  margin-left: 0;
-  padding-left: 0;
-  list-style: none outside none;
-  float: left;
-  margin-left: 6%;
-  margin-top: 5.8em;
   width: 50%; }
-.home-location__map-links a {
-  background: #98bb6d; }
+  @media (min-width: 41.875em) {
+    .home-location__small-map {
+      width: 35%; } }
+
+.home-location__map-links {
+  float: left;
+  width: 50%; }
+  .home-location__map-links ul {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none outside none;
+    float: left;
+    margin-left: 6%;
+    margin-top: 5.8em; }
+  .home-location__map-links a {
+    background: #98bb6d; }
 
 @media (min-width: 41.875em) {
   .home-location__grid-unit-travel {

@@ -801,11 +801,11 @@ a.button--sponsorship {
 }
 
 .grid-unit--speaker--preview {
-    @media (max-width: $large-screen) {
+    @media (max-width: $medium-screen) {
         @include grid-column--block;
         @include block-grid-half;
     }
-    @media (min-width: $large-screen) {
+    @media (min-width: $medium-screen) {
         @include grid-column--block;
         @include block-grid-third;
     }
@@ -844,14 +844,19 @@ a.button--sponsorship {
     @extend .fullpage-section;
     border-top: 1px solid $colour_borders;
     padding: 3.5em 0 2em;
+
     h2 {
         background: $colour_grey_background;
         color: white;
         display: inline-block;
-        @include remSize(38);
+        @include remSize(26);
         line-height: 1.5em;
         margin-bottom: 0.3em;
         padding: 0 3%;
+
+        @media (min-width: $medium-screen) {
+            @include remSize(38);
+        }
     }
     li {
         @include remSize(20);
@@ -865,7 +870,12 @@ a.button--sponsorship {
         padding: 0.4em 10% 0.4em 6%;
     }
     p.subtitle {    
-        @include remSize(26);
+        @include remSize(18);
+        
+        @media (min-width: $medium-screen) {
+            @include remSize(26);
+        }
+
         line-height: 1.5em;
         span {
             background: $colour_gold;
@@ -903,16 +913,21 @@ a.button--sponsorship {
 
 .home-location__small-map {
     float: left;
-    width: 35%;
+    width: 50%;
+    @media (min-width: $medium-screen) {
+        width: 35%;
+    }
 }
 
 .home-location__map-links {
+    float: left;
+    width: 50%;
     ul {
         @include unstyled-list;
         float: left;
         margin-left: 6%;
         margin-top: 5.8em;
-        width: 50%;
+        //width: 50%;
     }
     a {
         background: $colour_green;
