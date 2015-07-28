@@ -1041,7 +1041,7 @@ a.button--sponsorship {
     font-size: 1.875rem;
     font-weight: 400;
     padding: 0.2em 0.8em;
-    z-index: 1001;
+    z-index: 201;
     position: relative; }
   .hero--short p.subtitle {
     color: #333333;
@@ -1051,7 +1051,7 @@ a.button--sponsorship {
     font-size: 1.5625rem;
     line-height: 30px;
     margin-top: 1.1em;
-    z-index: 1001;
+    z-index: 201;
     position: relative; }
     .hero--short p.subtitle span {
       background: white;
@@ -1071,24 +1071,22 @@ a.button--sponsorship {
       padding-top: 10.2em; } }
   @media (min-width: 41.875em) {
     .general__hero h1, .general__hero p.subtitle {
-      margin-left: 63.6%;
-      z-index: 200;
-      position: relative; } }
+      margin-left: 63.6%; } }
 
 .general__hero-monster-dude {
   background: url(../img/hero-monster.svg) no-repeat 6.8% bottom;
   background-size: 450px;
-  height: 600px;
+  height: 475px;
   width: 150%;
   position: relative;
+  margin-top: 152px;
   top: -400px;
   left: -55px;
   z-index: 100; }
   @media (min-width: 41.875em) {
     .general__hero-monster-dude {
       background-size: 650px;
-      top: -500px;
-      z-index: 1000; } }
+      top: -500px; } }
   @media (min-width: 64em) {
     .general__hero-monster-dude {
       top: -475px; } }

@@ -716,7 +716,7 @@ a.button--sponsorship {
         @include remSize(30);
         font-weight: 400;
         padding: 0.2em 0.8em;
-        z-index: 1001;
+        z-index: 201;
         position:relative;
     }
     p.subtitle {    
@@ -726,7 +726,7 @@ a.button--sponsorship {
         @include remSize(25);
         line-height: 30px;
         margin-top: 1.1em;
-        z-index: 1001;
+        z-index: 201;
         position:relative;
         span {
             background: white;
@@ -755,18 +755,17 @@ a.button--sponsorship {
     h1, p.subtitle {
         @media (min-width: $medium-screen) {
         margin-left: 63.6%;
-        z-index: 200;
-        position: relative;
-    }
+        }
     }
 }
 
 .general__hero-monster-dude {
     background: url(../img/hero-monster.svg) no-repeat 6.8% bottom;
     background-size: 450px;
-    height: 600px;
+    height: 475px;
     width: 150%;
     position: relative;
+    margin-top: 152px;
     top: -400px; //Ditched em as to unpredictable with scaling
     left: -55px;
     z-index: 100;
@@ -774,7 +773,7 @@ a.button--sponsorship {
     @media (min-width: $medium-screen) {
         background-size: 650px;
         top: -500px;
-        z-index: 1000;
+        
     }
 
     @media (min-width: $large-screen) {
