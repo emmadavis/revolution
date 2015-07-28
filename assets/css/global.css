@@ -493,19 +493,27 @@ main h2 {
 
 .header--pre {
   background: #191919;
-  height: 2.8125em;
-  padding: 0.5em 0;
-  margin-top: 1.25em; }
+  height: 4.375em;
+  padding: 0.5em 0; }
+  @media (min-width: 41.875em) {
+    .header--pre {
+      height: 2.8125em; } }
 
 .quick-event-details {
   margin-left: 0;
   padding-left: 0;
   list-style: none outside none;
-  margin: 0; }
+  margin: 0;
+  text-align: center; }
   @media (min-width: 41.875em) {
     .quick-event-details {
       font-size: 13px;
-      font-size: 0.8125rem; } }
+      font-size: 0.8125rem;
+      margin-left: -0.5em;
+      margin-bottom: 0; }
+      .quick-event-details li {
+        display: inline-block;
+        margin-left: 0.5em; } }
   @media (min-width: 64em) {
     .quick-event-details {
       margin-left: -0.5em;
@@ -514,7 +522,10 @@ main h2 {
         display: inline-block;
         margin-left: 0.5em; } }
   .quick-event-details li {
-    padding-right: 0.8em; }
+    padding-right: 0.8em;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    line-height: 1.25em; }
     @media (min-width: 64em) {
       .quick-event-details li {
         border-right: 1px solid rgba(255, 255, 255, 0.1); }
@@ -550,24 +561,36 @@ main h2 {
           border-left: none; } }
 
 .header--site {
-  background: #2a2a2a;
-  padding-bottom: 2.5em; }
+  background: #2a2a2a; }
   .header--site .wrapper {
     position: relative; }
 
 .site-logo {
   background: url("../img/2015-logo.svg") no-repeat top left;
   background-size: 100%;
-  display: inline-block;
+  display: block;
   position: relative;
-  height: 3.8125em;
-  width: 20%;
-  left: 4.5%;
-  top: 1em; }
+  width: 60%;
+  max-width: 14.0625em;
+  top: 1em;
+  left: 1em; }
+  @media (min-width: 41.875em) {
+    .site-logo {
+      display: inline-block;
+      width: 31%;
+      left: 4.5%; } }
+  @media (min-width: 64em) {
+    .site-logo {
+      width: 20%; } }
 
 .header-shropgeek-logo {
-  position: relative;
-  top: 1.25em; }
+  display: none; }
+  @media (min-width: 41.875em) {
+    .header-shropgeek-logo {
+      display: block;
+      position: relative;
+      top: 1.25em;
+      float: left; } }
 
 @media (min-width: 64em) {
   .navigation-position {
@@ -576,8 +599,7 @@ main h2 {
     top: 0; } }
 
 .site-nav {
-  width: 110%;
-  left: -5%; }
+  top: 50px; }
   @media (min-width: 41.875em) {
     .site-nav {
       width: 106%;
@@ -585,7 +607,8 @@ main h2 {
   @media (min-width: 64em) {
     .site-nav {
       width: auto;
-      left: 2%; } }
+      left: 2%;
+      top: 0; } }
 
 .nav__menu {
   margin: 0;
@@ -624,6 +647,12 @@ main h2 {
     color: #f8E71c; }
   .primary-links-menu li:last-child {
     height: 90px; }
+    .primary-links-menu li:last-child img {
+      display: block;
+      margin: 0 auto; }
+      @media (min-width: 64em) {
+        .primary-links-menu li:last-child img {
+          display: inline; } }
 
 .nav__menu--buy-button {
   margin-top: 0.8em;
@@ -646,9 +675,14 @@ main h2 {
   font-family: "futura-pt-condensed", "Arial Narrow", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 19px;
-  font-size: 1.1875rem;
-  line-height: 1em; }
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 1.35em; }
+  @media (min-width: 64em) {
+    .hashtag {
+      font-size: 19px;
+      font-size: 1.1875rem;
+      line-height: 1em; } }
 
 /*! responsive-nav.js 1.0.31 by @viljamis */
 .js .nav-collapse {
@@ -675,7 +709,7 @@ main h2 {
   user-select: none;
   position: absolute;
   right: 5%;
-  top: 1.5em;
+  top: 2.1em;
   height: 22px;
   width: 22px;
   background: transparent url(../img/menu-white.png) center center no-repeat;
@@ -892,7 +926,7 @@ a.button--sponsorship {
 .hero-homepage {
   background: url("../img/hero.png") no-repeat center bottom;
   background-size: 100%;
-  height: 28px;
+  height: 280px;
   padding-top: 2em; }
   @media (min-width: 41.875em) {
     .hero-homepage {
