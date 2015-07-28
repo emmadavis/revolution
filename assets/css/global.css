@@ -602,10 +602,6 @@ main h2 {
 
 .site-nav {
   top: 50px; }
-  @media (min-width: 41.875em) {
-    .site-nav {
-      width: 106%;
-      left: -3%; } }
   @media (min-width: 64em) {
     .site-nav {
       width: auto;
@@ -647,27 +643,32 @@ main h2 {
         border-bottom: none; } }
   .primary-links-menu li.current a {
     color: #f8E71c; }
-  .primary-links-menu li:last-child {
-    height: 90px; }
-    .primary-links-menu li:last-child img {
-      display: block;
-      margin: 0 auto; }
-      @media (min-width: 64em) {
-        .primary-links-menu li:last-child img {
-          display: inline; } }
+  .primary-links-menu li:last-child img {
+    display: block;
+    margin: 0 auto; }
+    @media (min-width: 64em) {
+      .primary-links-menu li:last-child img {
+        display: inline; } }
 
 .nav__menu--buy-button {
   margin-top: 0.8em;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  padding-bottom: 75px !important; }
 
 .nav__menu--buy-button-bg {
-  right: 5%;
+  width: 79px;
   height: 79px;
   position: absolute;
-  top: 0.6em;
-  width: 79px;
-  z-index: 1; }
+  z-index: 1;
+  margin-left: -39px;
+  left: 50%;
+  bottom: 55px; }
+  @media (min-width: 64em) {
+    .nav__menu--buy-button-bg {
+      right: 5%;
+      left: auto;
+      top: 0.6em; } }
 
 .nav-text-link {
   position: relative;
@@ -1056,10 +1057,10 @@ a.button--sponsorship {
     margin-bottom: 2.35em; }
 
 .about__hero {
-  background: url(../img/flying-phone-dude.png) no-repeat 11.3% 4.3em, url(../img/flying-smartphone-dude.png) no-repeat 90.7% 3.6em, url(../img/hero-spiral.png) no-repeat center 0; }
+  background: url(../img/flying-phone-dude.png) no-repeat 11.3% 4.3em, url(../img/flying-smartphone-dude.png) no-repeat 90.7% 3.6em, url(../img/standard-hero-spiral-1.png) no-repeat center 0; }
 
 .general__hero {
-  background: url(../img/hero-spiral.png) no-repeat center top; }
+  background: url(../img/standard-hero-spiral-1.png) no-repeat center top; }
   @media (min-width: 41.875em) {
     .general__hero {
       padding-top: 10.2em; } }
@@ -1179,15 +1180,19 @@ a.button--sponsorship {
     line-height: 1.5em;
     margin-bottom: 0.3em;
     padding: 0 3%; }
-    @media (min-width: 41.875em) {
+    @media (min-width: 64em) {
       .home-location h2 {
         font-size: 38px;
         font-size: 2.375rem; } }
   .home-location li {
-    font-size: 20px;
-    font-size: 1.25rem;
+    font-size: 16px;
+    font-size: 1rem;
     font-family: "futura-pt", "Helvetica Neue", Arial, Helvetica, serif;
     margin-bottom: 1em; }
+    @media (min-width: 64em) {
+      .home-location li {
+        font-size: 20px;
+        font-size: 1.25rem; } }
   .home-location a, .home-location span {
     background: #f6f6f6;
     color: #4a4a4a;
@@ -1197,16 +1202,19 @@ a.button--sponsorship {
     font-size: 18px;
     font-size: 1.125rem;
     line-height: 1.5em; }
-    @media (min-width: 41.875em) {
-      .home-location p.subtitle {
-        font-size: 26px;
-        font-size: 1.625rem; } }
     .home-location p.subtitle span {
       background: #e7b42b;
-      padding: 0.1em 0.7em; }
+      padding: 0.1em 0.1em; }
     .home-location p.subtitle:last-of-type {
       margin-bottom: 0.8em;
       margin-top: -1.2em; }
+    @media (min-width: 64em) {
+      .home-location p.subtitle {
+        font-size: 26px;
+        font-size: 1.625rem; }
+        .home-location p.subtitle span {
+          background: #e7b42b;
+          padding: 0.1em 0.7em; } }
   .home-location h2, .home-location h3, .home-location p {
     font-family: "futura-pt-condensed", "Arial Narrow", sans-serif; }
   .home-location h3 {
@@ -1256,8 +1264,11 @@ a.button--sponsorship {
     padding-left: 0;
     list-style: none outside none;
     float: left;
-    margin-left: 6%;
-    margin-top: 5.8em; }
+    margin-left: 6%; }
+    @media (min-width: 64em) {
+      .home-location__map-links ul {
+        margin-top: 5.8em;
+        width: 100%; } }
   .home-location__map-links a {
     background: #98bb6d; }
 
@@ -1539,32 +1550,29 @@ a.button--sponsorship {
     *zoom: 1; }
 
 @media (min-width: 64em) {
-  .speaker-unit--metadata {
+  .speaker-unit--metadata:first-child {
+    width: 60%; }
+  .speaker-unit--metadata:last-child {
+    width: 40%; } }
+
+@media (min-width: 64em) {
+  .speaker-unit--description {
     float: left;
-    padding-left: 3%; }
-    .speaker-unit--metadata:first-child {
+    padding-left: 3%;
+    width: 75%;
+    padding-left: 0; }
+    .speaker-unit--description:first-child {
+      padding-left: 0; } }
+
+@media (min-width: 64em) {
+  .speaker-unit--photo {
+    float: left;
+    padding-left: 3%;
+    width: 25%; }
+    .speaker-unit--photo:first-child {
       padding-left: 0; }
-    .speaker-unit--metadata:first-child {
-      width: 60%; }
-    .speaker-unit--metadata:last-child {
-      width: 40%; } }
-
-.speaker-unit--description {
-  float: left;
-  padding-left: 3%;
-  width: 75%;
-  padding-left: 0; }
-  .speaker-unit--description:first-child {
-    padding-left: 0; }
-
-.speaker-unit--photo {
-  float: left;
-  padding-left: 3%;
-  width: 25%; }
-  .speaker-unit--photo:first-child {
-    padding-left: 0; }
-  .speaker-unit--photo img {
-    max-width: 248px; }
+    .speaker-unit--photo img {
+      max-width: 248px; } }
 
 .speaker__name {
   margin-top: 0.55em; }
@@ -1755,6 +1763,19 @@ a.button--sponsorship {
   .shrewsbury__grid-row {
     *zoom: 1; }
 
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
 .shrewsbury__travel {
   padding: 2em 0;
   border-bottom: 1px solid #cdcdcd; }
@@ -1827,17 +1848,17 @@ a.button--sponsorship {
   background: url(../img/buy-tickets-large-button.png) no-repeat center;
   background-size: 100%;
   height: 129px;
-  left: 44%;
+  width: 188px;
+  margin: 0 auto;
   position: relative;
   top: 0.5em;
-  width: 188px;
   z-index: 2; }
   .buy--tickets_button a {
     height: 100%;
     width: 100%; }
 
 .buy--tickets_button-bg {
-  left: 46.5%;
+  margin: 0 auto;
   height: 127px;
   position: relative;
   top: -7.6em;

@@ -283,8 +283,8 @@ main h2 {
     top: 50px;
 
     @media (min-width: $medium-screen) {
-        width: 106%;
-        left: -3%;
+       // width: 106%;
+       // left: -3%;
     }
     @media (min-width: $large-screen) {
         width: auto;
@@ -326,7 +326,7 @@ main h2 {
         color: $colour_yellow;
     }
     li:last-child {
-        height: 90px;
+        //height: 90px;
 
         img { 
             display: block; margin: 0 auto; 
@@ -342,15 +342,24 @@ main h2 {
     margin-top: 0.8em;
     position: relative;
     z-index: 2;
+    padding-bottom: 75px!important;
 }
 
 .nav__menu--buy-button-bg {
-    right: 5%;
+    width: 79px;
     height: 79px;
     position: absolute;
-    top: 0.6em;
-    width: 79px;
     z-index: 1;
+    margin-left: -39px;
+    left: 50%;
+    bottom: 55px;
+
+    @media (min-width: $large-screen) {
+        right: 5%;
+        left: auto;
+        top: 0.6em;
+
+    }
 }
 
 .nav-text-link {
@@ -730,11 +739,11 @@ a.button--sponsorship {
 .about__hero {
     background: url(../img/flying-phone-dude.png) no-repeat 11.3% 4.3em,
                 url(../img/flying-smartphone-dude.png) no-repeat 90.7% 3.6em,
-                url(../img/hero-spiral.png) no-repeat center 0;
+                url(../img/standard-hero-spiral-1.png) no-repeat center 0;
 }
 
 .general__hero {
-    background: url(../img/hero-spiral.png) no-repeat center top;
+    background: url(../img/standard-hero-spiral-1.png) no-repeat center top;
     @media (min-width: $medium-screen) {
         padding-top: 10.2em;
     }
@@ -854,14 +863,18 @@ a.button--sponsorship {
         margin-bottom: 0.3em;
         padding: 0 3%;
 
-        @media (min-width: $medium-screen) {
+        @media (min-width: $large-screen) {
             @include remSize(38);
         }
     }
     li {
-        @include remSize(20);
+
+        @include remSize(16);
         font-family: $futura;
         margin-bottom: 1em;       
+        @media (min-width: $large-screen) {
+            @include remSize(20);
+        }
     }
     a, span {
         background: $colour_pale_grey_background;
@@ -871,19 +884,24 @@ a.button--sponsorship {
     }
     p.subtitle {    
         @include remSize(18);
-        
-        @media (min-width: $medium-screen) {
-            @include remSize(26);
-        }
 
         line-height: 1.5em;
         span {
             background: $colour_gold;
-            padding: 0.1em 0.7em;
+            padding: 0.1em 0.1em;
         }
         &:last-of-type {
             margin-bottom: 0.8em;
             margin-top: -1.2em;
+        }
+
+        @media (min-width: $large-screen) {
+            @include remSize(26);
+
+            span {
+                background: $colour_gold;
+                padding: 0.1em 0.7em;
+            }
         }
     }
     h2, h3, p {
@@ -926,7 +944,11 @@ a.button--sponsorship {
         @include unstyled-list;
         float: left;
         margin-left: 6%;
+
+        @media (min-width: $large-screen) {
         margin-top: 5.8em;
+        width: 100%;
+        }
         //width: 50%;
     }
     a {
@@ -1148,8 +1170,10 @@ a.button--sponsorship {
 }
 
 .speaker-unit--metadata {
+
+
     @media (min-width: $large-screen) {
-        @include grid-column;
+        
         &:first-child {
             @include grid-column--three-fifths;
         }
@@ -1160,16 +1184,23 @@ a.button--sponsorship {
 }
 
 .speaker-unit--description {
-    @include grid-column;
-    @include grid-column--three-quarters;
-    @include grid-column--no-padding;
+    @media (min-width: $large-screen) {
+        @include grid-column;
+        @include grid-column--three-quarters;
+        @include grid-column--no-padding;
+    }
 }
 
 .speaker-unit--photo {
-    @include grid-column;
-    @include grid-column--quarter;
-    img {
-        max-width: 248px;
+
+
+
+    @media (min-width: $large-screen) {
+        @include grid-column;
+        @include grid-column--quarter;
+        img {
+            max-width: 248px;
+        }
     }
 }
 
@@ -1348,6 +1379,21 @@ a.button--sponsorship {
     @include grid-row;
 }
 
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
 .shrewsbury__travel {
     padding: $gutter-width 0;
     border-bottom: 1px solid $colour_borders;
@@ -1410,10 +1456,11 @@ a.button--sponsorship {
     background: url(../img/buy-tickets-large-button.png) no-repeat center;
     background-size: 100%;
     height: 129px;
-    left: 44%;
+    width: 188px;
+    margin: 0 auto;
     position: relative;
     top: 0.5em;
-    width: 188px;
+    
     a {
         height: 100%;
         width: 100%;
@@ -1422,7 +1469,8 @@ a.button--sponsorship {
 }
 
 .buy--tickets_button-bg {
-    left: 46.5%;
+    //left: 46.5%;
+    margin: 0 auto;
     height: 127px;
     position: relative;
     top: -7.6em;
