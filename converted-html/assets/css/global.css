@@ -1604,6 +1604,13 @@ a.button--sponsorship {
       padding-left: 0; }
     .speaker-unit--photo img {
       max-width: 248px; } }
+.speaker-unit--photo img {
+  width: 100%;
+  max-width: 300px; }
+  @media (min-width: 64em) {
+    .speaker-unit--photo img {
+      width: auto;
+      max-width: 100%; } }
 
 .speaker__name {
   margin-top: 0.55em; }
