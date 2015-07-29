@@ -1079,26 +1079,28 @@ a.button--sponsorship {
   background-size: 450px;
   height: 475px;
   width: 150%;
-  position: relative;
+  position: absolute;
   margin-top: 152px;
-  top: -400px;
+  top: -200px;
   left: -55px;
-  z-index: 100; }
+  z-index: 100;
+    /* Monster on About page is weirdly in wrong position
+    &.about__hero-monster-dude {
+        top: -400px;
+
+        @media (min-width: $medium-screen) {
+            top: -500px;
+        }
+
+        @media (min-width: $large-screen) {
+            top: -465px; 
+        }
+    }
+    */ }
   @media (min-width: 41.875em) {
     .general__hero-monster-dude {
       background-size: 650px;
-      top: -500px; } }
-  @media (min-width: 64em) {
-    .general__hero-monster-dude {
-      top: -475px; } }
-  .general__hero-monster-dude.about__hero-monster-dude {
-    top: -400px; }
-    @media (min-width: 41.875em) {
-      .general__hero-monster-dude.about__hero-monster-dude {
-        top: -500px; } }
-    @media (min-width: 64em) {
-      .general__hero-monster-dude.about__hero-monster-dude {
-        top: -465px; } }
+      top: -190px; } }
 
 .fullpage-section, .speakers, .home-location, .who-is-it-for, .location__shrewsbury, .footer--sponsors {
   /**
@@ -1151,7 +1153,7 @@ a.button--sponsorship {
 @media (max-width: 41.875em) {
   .grid-unit--speaker--preview {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 48.5%; }
     .grid-unit--speaker--preview:first-child {
@@ -1161,7 +1163,7 @@ a.button--sponsorship {
 @media (min-width: 41.875em) {
   .grid-unit--speaker--preview {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 30.666666667%; }
     .grid-unit--speaker--preview:first-child {
@@ -1298,18 +1300,21 @@ a.button--sponsorship {
   .home-location__map-links a {
     background: #98bb6d; }
 
-@media (min-width: 41.875em) {
-  .home-location__grid-unit-travel {
-    float: left;
-    padding-left: 3%;
-    width: 50%; }
-    .home-location__grid-unit-travel:first-child {
-      padding-left: 0; } }
-.home-location__grid-unit-travel ul {
-  margin-left: 0;
-  padding-left: 0;
-  list-style: none outside none;
-  margin-top: 1.2em; }
+.home-location__grid-unit-travel {
+  clear: both; }
+  @media (min-width: 41.875em) {
+    .home-location__grid-unit-travel {
+      clear: none;
+      float: left;
+      padding-left: 3%;
+      width: 50%; }
+      .home-location__grid-unit-travel:first-child {
+        padding-left: 0; } }
+  .home-location__grid-unit-travel ul {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none outside none;
+    margin-top: 1.2em; }
 
 .welcome-back {
   background: #363131;
@@ -1390,7 +1395,7 @@ a.button--sponsorship {
   @media (min-width: 41.875em) and (max-width: 64em) {
     .who-is-it-for__grid-unit {
       display: inline-block;
-      margin-left: 3%;
+      margin-left: 2.1%;
       vertical-align: top;
       width: 48.5%; }
       .who-is-it-for__grid-unit:first-child {
@@ -1400,7 +1405,7 @@ a.button--sponsorship {
   @media (min-width: 64em) {
     .who-is-it-for__grid-unit {
       display: inline-block;
-      margin-left: 3%;
+      margin-left: 2.1%;
       vertical-align: top;
       width: 30.666666667%; }
       .who-is-it-for__grid-unit:first-child {
@@ -1764,7 +1769,7 @@ a.button--sponsorship {
 @media (min-width: 41.875em) {
   .shrewsbury__intro--grid-unit {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 48.5%; }
     .shrewsbury__intro--grid-unit:first-child {
@@ -1811,7 +1816,7 @@ a.button--sponsorship {
 @media (min-width: 41.875em) {
   .shrewsbury__travel--grid-unit {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 30.666666667%; }
     .shrewsbury__travel--grid-unit:first-child {
@@ -1832,7 +1837,7 @@ a.button--sponsorship {
 @media (max-width: 41.875em) {
   .shrewsbury__accomodation--grid-unit {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 48.5%; }
     .shrewsbury__accomodation--grid-unit:first-child {
@@ -1842,7 +1847,7 @@ a.button--sponsorship {
 @media (min-width: 41.875em) {
   .shrewsbury__accomodation--grid-unit {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 30.666666667%; }
     .shrewsbury__accomodation--grid-unit:first-child {
@@ -1852,7 +1857,7 @@ a.button--sponsorship {
 @media (min-width: 64em) {
   .shrewsbury__accomodation--grid-unit {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 17.6%; }
     .shrewsbury__accomodation--grid-unit:first-child {
@@ -1923,7 +1928,7 @@ a.button--sponsorship {
 @media (max-width: 41.875em) {
   .footer--sponsors__grid-unit {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 48.5%; }
     .footer--sponsors__grid-unit:first-child {
@@ -1933,7 +1938,7 @@ a.button--sponsorship {
 @media (min-width: 41.875em) and (max-width: 64em) {
   .footer--sponsors__grid-unit {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 30.666666667%; }
     .footer--sponsors__grid-unit:first-child {
@@ -1943,7 +1948,7 @@ a.button--sponsorship {
 @media (min-width: 64em) {
   .footer--sponsors__grid-unit {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 22.75%;
     margin-left: 0.8%; }
@@ -1955,7 +1960,7 @@ a.button--sponsorship {
 @media (max-width: 41.875em) {
   .footer--sponsors__grid-unit--minor {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 30.666666667%; }
     .footer--sponsors__grid-unit--minor:first-child {
@@ -1965,7 +1970,7 @@ a.button--sponsorship {
 @media (min-width: 41.875em) and (max-width: 64em) {
   .footer--sponsors__grid-unit--minor {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 22.75%; }
     .footer--sponsors__grid-unit--minor:first-child {
@@ -1975,7 +1980,7 @@ a.button--sponsorship {
 @media (min-width: 64em) {
   .footer--sponsors__grid-unit--minor {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 9.875%; }
     .footer--sponsors__grid-unit--minor:first-child {
@@ -2123,7 +2128,7 @@ a.button--sponsorship {
 @media (min-width: 41.875em) {
   .about__team__list__item {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 30.666666667%; }
     .about__team__list__item:first-child {
@@ -2276,7 +2281,7 @@ a.button--sponsorship {
 @media (max-width: 41.875em) {
   .about-shrewsbury__grid-unit {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 48.5%; }
     .about-shrewsbury__grid-unit:first-child {
@@ -2286,7 +2291,7 @@ a.button--sponsorship {
 @media (min-width: 41.875em) and (max-width: 64em) {
   .about-shrewsbury__grid-unit {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 30.666666667%; }
     .about-shrewsbury__grid-unit:first-child {
@@ -2296,7 +2301,7 @@ a.button--sponsorship {
 @media (min-width: 64em) {
   .about-shrewsbury__grid-unit {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 22.75%; }
     .about-shrewsbury__grid-unit:first-child {
@@ -2319,7 +2324,7 @@ a.button--sponsorship {
 
 .about-shrewsbury__food-and-drink__grid-unit {
   display: inline-block;
-  margin-left: 3%;
+  margin-left: 2.1%;
   vertical-align: top;
   margin-top: 1em; }
   .about-shrewsbury__food-and-drink__grid-unit:first-child {
@@ -2415,7 +2420,7 @@ a.button--sponsorship {
 @media (min-width: 41.875em) {
   .sponsors__grid-unit--large {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 30.666666667%; }
     .sponsors__grid-unit--large:first-child {
@@ -2426,7 +2431,7 @@ a.button--sponsorship {
 @media (min-width: 41.875em) {
   .sponsors__grid-unit--med {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 22.75%;
     margin-left: 6%;
@@ -2439,7 +2444,7 @@ a.button--sponsorship {
 @media (max-width: 41.875em) {
   .sponsors__grid-unit--small {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 48.5%; }
     .sponsors__grid-unit--small:first-child {
@@ -2449,7 +2454,7 @@ a.button--sponsorship {
 @media (min-width: 41.875em) {
   .sponsors__grid-unit--small {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 13.6%; }
     .sponsors__grid-unit--small:first-child {
@@ -2460,7 +2465,7 @@ a.button--sponsorship {
 @media (max-width: 41.875em) {
   .sponsors__grid-unit--tiny {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 48.5%; }
     .sponsors__grid-unit--tiny:first-child {
@@ -2470,7 +2475,7 @@ a.button--sponsorship {
 @media (min-width: 41.875em) {
   .sponsors__grid-unit--tiny {
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2.1%;
     vertical-align: top;
     width: 9.875%; }
     .sponsors__grid-unit--tiny:first-child {
