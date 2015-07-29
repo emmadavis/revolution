@@ -435,7 +435,7 @@ main h2 {
     background: $colour_grey_background;
     color: #fff;
     padding: 3em 0 17em;
-    background-image: url('../img/footer-scene.svg');
+    background-image: url('../img/footer-scene-flying-characters.svg'), url('../img/footer-scene-buildings.svg');
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -445,6 +445,30 @@ main h2 {
             color: #fff;
         }
     }
+}
+
+.footer-scene-monster {
+    background-image: url('../img/footer-scene-monster.svg');
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    bottom: -20.3125em;
+    height: 20.3125em;
+    max-width: 75em;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.footer-scene-front {
+    background-image: url('../img/footer-scene-bridge.svg');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    bottom: 0;
+    height: 20.3125em;
+    position: absolute;
+    width: 100%;
 }
 
 .footer--site-footer__grid-row {
