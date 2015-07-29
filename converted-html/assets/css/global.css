@@ -743,7 +743,9 @@ main h2 {
   background-image: url("../img/footer-scene-flying-characters.svg"), url("../img/footer-scene-buildings.svg");
   background-position: right bottom;
   background-repeat: no-repeat;
-  background-size: 100%; }
+  background-size: 100%;
+  position: relative;
+  overflow: hidden; }
   .footer--site-footer:before, .footer--site-footer:after {
     content: " ";
     /* 1 */
