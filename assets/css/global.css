@@ -1079,26 +1079,28 @@ a.button--sponsorship {
   background-size: 450px;
   height: 475px;
   width: 150%;
-  position: relative;
+  position: absolute;
   margin-top: 152px;
-  top: -400px;
+  top: -200px;
   left: -55px;
-  z-index: 100; }
+  z-index: 100;
+    /* Monster on About page is weirdly in wrong position
+    &.about__hero-monster-dude {
+        top: -400px;
+
+        @media (min-width: $medium-screen) {
+            top: -500px;
+        }
+
+        @media (min-width: $large-screen) {
+            top: -465px; 
+        }
+    }
+    */ }
   @media (min-width: 41.875em) {
     .general__hero-monster-dude {
       background-size: 650px;
-      top: -500px; } }
-  @media (min-width: 64em) {
-    .general__hero-monster-dude {
-      top: -475px; } }
-  .general__hero-monster-dude.about__hero-monster-dude {
-    top: -400px; }
-    @media (min-width: 41.875em) {
-      .general__hero-monster-dude.about__hero-monster-dude {
-        top: -500px; } }
-    @media (min-width: 64em) {
-      .general__hero-monster-dude.about__hero-monster-dude {
-        top: -465px; } }
+      top: -190px; } }
 
 .fullpage-section, .speakers, .home-location, .who-is-it-for, .location__shrewsbury, .footer--sponsors {
   /**
