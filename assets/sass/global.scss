@@ -439,6 +439,8 @@ main h2 {
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: 100%;
+    position: relative;
+    overflow: hidden;
     a {
         color: $colour_gold;
         @include hoverActiveFocus {
