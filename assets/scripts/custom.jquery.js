@@ -74,7 +74,7 @@ $(document).ready(function() {
         monster.animate({
             bottom: 0,
             opacity: 1
-        }, 1000).addClass('visible');
+        }, 1500).addClass('visible');
     }
 
     win.scroll(function() {
