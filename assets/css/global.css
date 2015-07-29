@@ -379,7 +379,8 @@ body {
   font-size: 1em;
   line-height: 1.5em;
   height: 100%;
-  min-height: 100%; }
+  min-height: 100%;
+  overflow-x: hidden; }
   @media (min-width: 41.875em) {
     body {
       line-height: 1.5em; } }
@@ -642,7 +643,7 @@ main h2 {
       .primary-links-menu a {
         border-bottom: none; } }
   .primary-links-menu li.current a {
-    color: #f8E71c; }
+    color: #e7b42b; }
   .primary-links-menu li:last-child img {
     display: block;
     margin: 0 auto; }
@@ -1090,6 +1091,14 @@ a.button--sponsorship {
   @media (min-width: 64em) {
     .general__hero-monster-dude {
       top: -475px; } }
+  .general__hero-monster-dude.about__hero-monster-dude {
+    top: -400px; }
+    @media (min-width: 41.875em) {
+      .general__hero-monster-dude.about__hero-monster-dude {
+        top: -500px; } }
+    @media (min-width: 64em) {
+      .general__hero-monster-dude.about__hero-monster-dude {
+        top: -465px; } }
 
 .fullpage-section, .speakers, .home-location, .who-is-it-for, .location__shrewsbury, .footer--sponsors {
   /**
@@ -2090,8 +2099,6 @@ a.button--sponsorship {
     height: 100%;
     padding: 0.5em 6%;
     width: 100%; }
-    .about__image-twitter-box a:hover {
-      text-decoration: none; }
 
 .about__team {
   background: #f6f6f6;
@@ -2399,7 +2406,7 @@ a.button--sponsorship {
   .micro-sponsors ul li {
     margin: 0; }
     .micro-sponsors ul li:nth-child(even) a {
-      color: #dea197; }
+      color: #e7b42b; }
 .micro-sponsors a {
   font-family: "futura-pt", "Helvetica Neue", Arial, Helvetica, serif;
   font-weight: 700;

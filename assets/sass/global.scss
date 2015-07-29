@@ -20,6 +20,7 @@ body {
     line-height: 1.5em;
     height: 100%;
     min-height: 100%;
+    overflow-x: hidden;
     @media (min-width: $medium-screen) {
         line-height: 1.5em;
     }
@@ -323,7 +324,7 @@ main h2 {
         padding: 0.5em 0.6em;
     }
     li.current a {
-        color: $colour_yellow;
+        color: $colour_gold;
     }
     li:last-child {
         //height: 90px;
@@ -779,8 +780,19 @@ a.button--sponsorship {
     @media (min-width: $large-screen) {
         top: -475px; //Ditched em as to unpredictable with scaling
 
+    }
 
+    // Monster on About page is weirdly in wrong position
+    &.about__hero-monster-dude {
+        top: -400px;
 
+        @media (min-width: $medium-screen) {
+            top: -500px;
+        }
+
+        @media (min-width: $large-screen) {
+            top: -465px; 
+        }
     }
 }
 
@@ -1690,7 +1702,7 @@ a.button--sponsorship {
         padding: 0.5em 6%;
         width: 100%;
         &:hover {
-            text-decoration: none;
+            //text-decoration: none;
         }
     }
 }
@@ -1954,7 +1966,7 @@ a.button--sponsorship {
             margin: 0;
             &:nth-child(even) {
                 a {
-                    color: lighten($colour_red, 23%);
+                    color: $colour_gold;
                 }
             }
         }
