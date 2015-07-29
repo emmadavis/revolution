@@ -1300,18 +1300,21 @@ a.button--sponsorship {
   .home-location__map-links a {
     background: #98bb6d; }
 
-@media (min-width: 41.875em) {
-  .home-location__grid-unit-travel {
-    float: left;
-    padding-left: 3%;
-    width: 50%; }
-    .home-location__grid-unit-travel:first-child {
-      padding-left: 0; } }
-.home-location__grid-unit-travel ul {
-  margin-left: 0;
-  padding-left: 0;
-  list-style: none outside none;
-  margin-top: 1.2em; }
+.home-location__grid-unit-travel {
+  clear: both; }
+  @media (min-width: 41.875em) {
+    .home-location__grid-unit-travel {
+      clear: none;
+      float: left;
+      padding-left: 3%;
+      width: 50%; }
+      .home-location__grid-unit-travel:first-child {
+        padding-left: 0; } }
+  .home-location__grid-unit-travel ul {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none outside none;
+    margin-top: 1.2em; }
 
 .welcome-back {
   background: #363131;

@@ -994,7 +994,11 @@ a.button--sponsorship {
 }
 
 .home-location__grid-unit-travel {
+
+    clear: both;
+
     @media (min-width: $medium-screen) {
+        clear: none;
         @include grid-column;
         @include grid-column--half;
     }
