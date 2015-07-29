@@ -1021,15 +1021,15 @@ a.button--sponsorship {
     @media (min-width: 77.77778em) {
       .hero-homepage figure {
         display: block;
-        background: #314b1f url(../img/pixelated-bg.jpg) no-repeat center;
+        background: #314b1f;
         border: 1px solid #274216;
         border-radius: 4px;
-        height: 245px;
-        width: 415px;
+        height: 246px;
+        width: 416px;
         position: relative;
         overflow: hidden;
-        left: 408px;
-        top: -293px;
+        left: 407px;
+        top: -294px;
         -ms-transform: rotate(4.25deg);
         /* IE 9 */
         -webkit-transform: rotate(4.25deg);
