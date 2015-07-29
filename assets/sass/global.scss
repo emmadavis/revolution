@@ -1243,6 +1243,16 @@ a.button--sponsorship {
             max-width: 248px;
         }
     }
+
+    img { 
+        width: 100%; 
+        max-width: 300px;
+
+        @media (min-width: $large-screen) {
+            width: auto;
+            max-width: 100%;
+        }
+    }
 }
 
 .speaker__metadata {
