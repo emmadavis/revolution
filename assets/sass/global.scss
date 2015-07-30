@@ -454,12 +454,27 @@ main h2 {
     background-position: right top;
     background-repeat: no-repeat;
     background-size: 100%;
-    bottom: -20.3125em;
-    height: 20.3125em;
+    bottom: -33%;
+    height: 33%;
     max-width: 75em;
     opacity: 0;
     position: absolute;
     width: 100%;
+
+    @media (min-width: $medium-screen) {
+        bottom: -20.3125em;
+        height: 20.3125em;
+    }
+
+    @media (min-width: $large-screen) {
+        bottom: -20.3125em;
+        height: 20.3125em;
+    }
+
+    @media (min-width: $giant-screen) {
+        bottom: -20.3125em;
+        height: 20.3125em;
+    }
 }
 
 .footer-scene-front {
@@ -663,34 +678,38 @@ a.button--sponsorship {
         color: $colour_hero_text;
         font-weight: 500;
         text-transform: none;
-    }
 
-    h2.top-subtitle {
-        background: $colour_gold;
-        @include remSize(24);
-        display: inline-block;
-        //height: 50px;
-        line-height: 1.6em;
-        margin-bottom: 0.7em;
-        padding: 0 1%;
-
-        @media (min-width: $medium-screen) {
-            @include remSize(30);
-        }
-    }
-
-    h2.bottom-subtitle {
-        @include remSize(21);
         .bg {
             background: $colour_gold;
             line-height: 1.2em;
             padding: 0 1%;
         }
 
-        @media (min-width: $medium-screen) {
-            @include remSize(25);
+        &.top-subtitle {
+        
+            @include remSize(24);
+            display: inline-block;
+            //height: 50px;
+            //line-height: 1.6em;
+            margin-bottom: 0.7em;
+            //padding: 0 1%;
+
+            @media (min-width: $medium-screen) {
+                @include remSize(30);
+            }
+
+        }
+
+        &.bottom-subtitle {
+            @include remSize(21);
+
+            @media (min-width: $medium-screen) {
+                @include remSize(25);
+            }
         }
     }
+
+
 
     figure {
         display: none;
@@ -705,7 +724,7 @@ a.button--sponsorship {
             position: relative;
             overflow: hidden;
             left: 407px;
-            top: -294px;
+            top: -317px;
 
             -ms-transform: rotate(4.25deg); /* IE 9 */
             -webkit-transform: rotate(4.25deg); /* Chrome, Safari, Opera */
@@ -842,10 +861,23 @@ a.button--sponsorship {
     .wrapper > h3 {
         margin-bottom: 0.2em;
     }
+
+
     p {
         line-height: 1.3125em;
         margin-bottom: 3.4em;
         text-align: center;
+
+        &.featuring {
+        
+            color: $colour_gold;
+            font-family: $futura-narrow;
+            font-weight: 600;
+            @include remSize(24);
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 0.1em;
+        }
     }
     a {
         color: $colour_green;
@@ -1101,15 +1133,27 @@ a.button--sponsorship {
     }
     &:first-child {
         background-image: url(../img/designers-dude.svg);
+        background-size: 65%;
+        @media (min-width: $medium-screen) {
+            background-size: 100%;
+        }
     }
     &:nth-child(2) {
         background-image: url(../img/developers-dude.svg);
         background-position: center .1125em;
+        background-size: 65%;
+        @media (min-width: $medium-screen) {
+            background-size: 100%;
+        }
     }
     &:last-child {
         background-image: url(../img/makers-dude.svg);
         background-position: center 1.9125em;
         background-size: 92.0862%;
+        background-size: 65%;
+        @media (min-width: $medium-screen) {
+            background-size: 100%;
+        }
     }
     h3 {
         background: $colour_gold;

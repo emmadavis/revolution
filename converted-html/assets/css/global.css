@@ -765,12 +765,24 @@ main h2 {
   background-position: right top;
   background-repeat: no-repeat;
   background-size: 100%;
-  bottom: -20.3125em;
-  height: 20.3125em;
+  bottom: -33%;
+  height: 33%;
   max-width: 75em;
   opacity: 0;
   position: absolute;
   width: 100%; }
+  @media (min-width: 41.875em) {
+    .footer-scene-monster {
+      bottom: -20.3125em;
+      height: 20.3125em; } }
+  @media (min-width: 64em) {
+    .footer-scene-monster {
+      bottom: -20.3125em;
+      height: 20.3125em; } }
+  @media (min-width: 77.77778em) {
+    .footer-scene-monster {
+      bottom: -20.3125em;
+      height: 20.3125em; } }
 
 .footer-scene-front {
   background-image: url("../img/footer-scene-bridge.svg");
@@ -995,29 +1007,26 @@ a.button--sponsorship {
     color: #333234;
     font-weight: 500;
     text-transform: none; }
-  .hero-homepage h2.top-subtitle {
-    background: #e7b42b;
-    font-size: 24px;
-    font-size: 1.5rem;
-    display: inline-block;
-    line-height: 1.6em;
-    margin-bottom: 0.7em;
-    padding: 0 1%; }
-    @media (min-width: 41.875em) {
-      .hero-homepage h2.top-subtitle {
-        font-size: 30px;
-        font-size: 1.875rem; } }
-  .hero-homepage h2.bottom-subtitle {
-    font-size: 21px;
-    font-size: 1.3125rem; }
-    .hero-homepage h2.bottom-subtitle .bg {
+    .hero-homepage h2 .bg {
       background: #e7b42b;
       line-height: 1.2em;
       padding: 0 1%; }
-    @media (min-width: 41.875em) {
-      .hero-homepage h2.bottom-subtitle {
-        font-size: 25px;
-        font-size: 1.5625rem; } }
+    .hero-homepage h2.top-subtitle {
+      font-size: 24px;
+      font-size: 1.5rem;
+      display: inline-block;
+      margin-bottom: 0.7em; }
+      @media (min-width: 41.875em) {
+        .hero-homepage h2.top-subtitle {
+          font-size: 30px;
+          font-size: 1.875rem; } }
+    .hero-homepage h2.bottom-subtitle {
+      font-size: 21px;
+      font-size: 1.3125rem; }
+      @media (min-width: 41.875em) {
+        .hero-homepage h2.bottom-subtitle {
+          font-size: 25px;
+          font-size: 1.5625rem; } }
   .hero-homepage figure {
     display: none; }
     @media (min-width: 77.77778em) {
@@ -1031,7 +1040,7 @@ a.button--sponsorship {
         position: relative;
         overflow: hidden;
         left: 407px;
-        top: -294px;
+        top: -317px;
         -ms-transform: rotate(4.25deg);
         /* IE 9 */
         -webkit-transform: rotate(4.25deg);
@@ -1155,6 +1164,15 @@ a.button--sponsorship {
     line-height: 1.3125em;
     margin-bottom: 3.4em;
     text-align: center; }
+    .speakers p.featuring {
+      color: #e7b42b;
+      font-family: "futura-pt-condensed", "Arial Narrow", sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      font-size: 1.5rem;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 0.1em; }
   .speakers a {
     color: #98bb6d; }
     .speakers a h3 {
@@ -1437,14 +1455,26 @@ a.button--sponsorship {
       .who-is-it-for__grid-unit:nth-child(3n+1) {
         margin-left: 0; } }
   .who-is-it-for__grid-unit:first-child {
-    background-image: url(../img/designers-dude.svg); }
+    background-image: url(../img/designers-dude.svg);
+    background-size: 65%; }
+    @media (min-width: 41.875em) {
+      .who-is-it-for__grid-unit:first-child {
+        background-size: 100%; } }
   .who-is-it-for__grid-unit:nth-child(2) {
     background-image: url(../img/developers-dude.svg);
-    background-position: center .1125em; }
+    background-position: center .1125em;
+    background-size: 65%; }
+    @media (min-width: 41.875em) {
+      .who-is-it-for__grid-unit:nth-child(2) {
+        background-size: 100%; } }
   .who-is-it-for__grid-unit:last-child {
     background-image: url(../img/makers-dude.svg);
     background-position: center 1.9125em;
-    background-size: 92.0862%; }
+    background-size: 92.0862%;
+    background-size: 65%; }
+    @media (min-width: 41.875em) {
+      .who-is-it-for__grid-unit:last-child {
+        background-size: 100%; } }
   .who-is-it-for__grid-unit h3 {
     background: #e7b42b;
     display: inline;
