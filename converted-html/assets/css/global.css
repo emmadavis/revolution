@@ -739,9 +739,9 @@ main h2 {
    */
   background: #363131;
   color: #fff;
-  padding: 3em 0 17em;
-  background-image: url("../img/footer-scene-flying-characters.svg"), url("../img/footer-scene-buildings.svg");
-  background-position: right bottom;
+  padding: 3em 0 10em 0;
+  background-image: url("../img/footer-scene-all.svg");
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
@@ -755,44 +755,42 @@ main h2 {
     clear: both; }
   .footer--site-footer {
     *zoom: 1; }
+  .footer--site-footer .wrapper {
+    height: 100%;
+    overflow: hidden; }
+  @media (min-width: 64em) {
+    .footer--site-footer {
+      padding: 3em 0 0 0;
+      background-image: url("../img/footer-scene-buildings.png");
+      height: 521px; } }
   .footer--site-footer a {
     color: #e7b42b; }
     .footer--site-footer a:hover, .footer--site-footer a:active, .footer--site-footer a:focus {
       color: #fff; }
 
-.footer-scene-monster {
-  background-image: url("../img/footer-scene-monster.svg");
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  bottom: -33%;
-  height: 33%;
-  max-width: 75em;
-  opacity: 0;
-  position: absolute;
-  width: 100%; }
-  @media (min-width: 41.875em) {
-    .footer-scene-monster {
-      bottom: -20.3125em;
-      height: 20.3125em; } }
-  @media (min-width: 64em) {
-    .footer-scene-monster {
-      bottom: -20.3125em;
-      height: 20.3125em; } }
-  @media (min-width: 77.77778em) {
-    .footer-scene-monster {
-      bottom: -20.3125em;
-      height: 20.3125em; } }
+@media (min-width: 64em) {
+  .footer-scene-monster {
+    background-image: url("../img/footer-scene-monster.svg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    bottom: -20.3125em;
+    height: 20.3125em;
+    max-width: 75em;
+    opacity: 0;
+    position: absolute;
+    width: 100%; } }
 
-.footer-scene-front {
-  background-image: url("../img/footer-scene-bridge.svg");
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  bottom: 0;
-  height: 20.3125em;
-  position: absolute;
-  width: 100%; }
+@media (min-width: 64em) {
+  .footer-scene-front {
+    background-image: url("../img/footer-scene-bridge.svg");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    bottom: 0;
+    height: 20.3125em;
+    position: absolute;
+    width: 100%; } }
 
 .footer--site-footer__grid-row {
   /**
@@ -965,7 +963,7 @@ a.button--sponsorship {
       padding-bottom: 5em; } }
 
 .hero-homepage {
-  background: url("../img/hero-spiral.svg") no-repeat center top;
+  background: url("../img/hero-spiral.png") no-repeat center top;
   background-size: 300%;
   height: 452px;
   padding: 2em 0 0 0;
@@ -1019,7 +1017,8 @@ a.button--sponsorship {
       @media (min-width: 41.875em) {
         .hero-homepage h2.top-subtitle {
           font-size: 30px;
-          font-size: 1.875rem; } }
+          font-size: 1.875rem;
+          width: 100%; } }
     .hero-homepage h2.bottom-subtitle {
       font-size: 21px;
       font-size: 1.3125rem; }
@@ -1108,7 +1107,7 @@ a.button--sponsorship {
       margin-left: 63.6%; } }
 
 .general__hero-monster-dude {
-  background: url(../img/hero-monster.svg) no-repeat 6.8% bottom;
+  background: url(../img/hero-monster.png) no-repeat 6.8% bottom;
   background-size: 450px;
   height: 475px;
   width: 150%;
@@ -1343,10 +1342,12 @@ a.button--sponsorship {
     background: #98bb6d; }
 
 .home-location__grid-unit-travel {
-  clear: both; }
+  clear: both;
+  text-align: center; }
   @media (min-width: 41.875em) {
     .home-location__grid-unit-travel {
       clear: none;
+      text-align: left;
       float: left;
       padding-left: 3%;
       width: 50%; }
@@ -1681,7 +1682,7 @@ a.button--sponsorship {
     color: #98bb6d; }
 
 .speaker__twitter {
-  background: url(../img/twitter-icon.svg) no-repeat left 0.45em;
+  background: url(../img/twitter-icon.png) no-repeat left 0.45em;
   background-size: 6.5%;
   margin-top: -0.6em; }
   .speaker__twitter a {
