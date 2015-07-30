@@ -1110,11 +1110,11 @@ a.button--sponsorship {
   background: url(../img/hero-monster.png) no-repeat 6.8% bottom;
   background-size: 450px;
   height: 475px;
-  width: 150%;
+  width: 100%;
   position: absolute;
   margin-top: 152px;
   top: -200px;
-  left: -55px;
+  left: 0px;
   z-index: 100;
     /* Monster on About page is weirdly in wrong position
     &.about__hero-monster-dude {
@@ -1132,7 +1132,8 @@ a.button--sponsorship {
   @media (min-width: 41.875em) {
     .general__hero-monster-dude {
       background-size: 650px;
-      top: -190px; } }
+      top: -190px;
+      left: -55px; } }
 
 .fullpage-section, .speakers, .home-location, .who-is-it-for, .location__shrewsbury, .footer--sponsors {
   /**

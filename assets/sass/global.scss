@@ -818,17 +818,17 @@ a.button--sponsorship {
     background: url(../img/hero-monster.png) no-repeat 6.8% bottom;
     background-size: 450px;
     height: 475px;
-    width: 150%;
+    width: 100%;
     position: absolute;
     margin-top: 152px;
     top: -200px; //Ditched em as to unpredictable with scaling
-    left: -55px;
+    left: 0px;
     z-index: 100;
 
     @media (min-width: $medium-screen) {
         background-size: 650px;
         top: -190px;
-        
+        left: -55px;
     }
 
     @media (min-width: $large-screen) {
